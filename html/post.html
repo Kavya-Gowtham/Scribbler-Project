@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+        <link rel="stylesheet" ̥ media="screen" href="../styles/common.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
+        <script src="../scripts/common.js"></script>
+    </head>
+
+    <body class="body-bg" onload="generateHeader()">
+
+        <!-- Page Header -->
+        <div id="page-header"></div>
+        <!-- SignUp Modal -->
+        <div id="signup-modal" class="modal"></div>
+        <!-- SignIn Modal -->
+        <div id="signin-modal" class="modal"></div>
+
+
+        <!-- Page Body -->
+        <div class="post-main-layout">
+            <div class="post-title" id="post-title" contenteditable="false">
+                    Everything you should know about Web Development
+            </div>
+
+            <div class="post-author-container">
+                <div class="post-author">Shristi Gupta</div>
+                <button class="post-edit" id="post-edit" onclick="toggleEditSaveButton()">Edit
+                    <i style="font-size: 14px;" class="fa fa-edit" id="edit-save-icon"></i>
+                </button>
+            </div>
+    
+            <div class="post-body" id="post-body">
+                Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).
+                Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps),
+                electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers,
+                may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server 
+                and network security configuration, and e-commerce development.Among Web professionals, "Web development" usually refers to the 
+                main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) 
+                to make content changes easier and available with basic technical skills. For larger organizations and businesses, Web development 
+                teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites. 
+                Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such 
+                as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain 
+                of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. 
+                Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.
+            </div>
+
+            <div>
+                <button id="like-post" onclick="postLiked()" class="like-post-btn">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"> Like</i>
+                </button>
+            </div>
+            <span id="like-count" class="like-count-text">Be the first one to like this!</span>
+
+            <div class="comment-text-area">
+                <textarea rows="5" cols="120" placeholder="Leave a comment..." id="userComments" value=""></textarea>
+                <br>
+                <button id="add-comment" class="add-comment-btn" onclick="addComments()">Comment</button>
+            </div>
+
+            <div class="all-comments-text">All Comments</div>
+            <div id="add-comments-to-list" class="comment-text"></div>
+    </div>
+
+        <script src="../scripts/post.js"></script>
+    </body>
+</html> 
